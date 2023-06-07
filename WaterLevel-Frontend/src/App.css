@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+/* For mobile: */
+main {
+  overflow-x: hidden;
+}
+
+figcaption{
+  font-family: 'Inter';
+  font-size: 12px;
+}
+
+figure{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end:0px;
+}
+
+p{
+  margin-block-start: 0px;
+  font-family: 'Inter';
+  font-size: 16px;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(66, 145, 152);
+    display: flex;
+    align-items: center; 
+    justify-content:center;
+}
+
+h2{
+  color: white;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  padding: 30px 60px 30px 60px;
+}
+
+button.monthYearPicker{
+  text-align: start;
+  background-color: white; 
+  border: 2px solid lightgray;
+  width: 45%;
+  height: 5vh;
+  text-indent: 10px;
+  font-family: 'Inter';
+  font-size: 16px;
+  color: gray;
+}
+
+.month-year-picker {
+  margin-top: 10px;
+}
+
+button.btn {
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(66, 145, 152);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+#changeMonthLabel {
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: rgb(66, 145, 152);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #619eff;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: inline-flex;
+    justify-content: center;
+    padding: 50px 15vw 5vh;
+    gap: 5vw;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: inline-flex;
+    justify-content: center;
+    padding: 50px 15vw 5vh;
+    gap: 5vw;
+}
+
+img {
+    width: 100%;
+  }
+
+canvas{
+  position: relative;
+  height: 30vh !important; 
+  width: 100% !important;
+  margin:auto;
+}
+
+@media only screen and (min-width: 480px) {
+  /* For tablets: */
+  main{
+    
+  }
+}
+
+
+@media only screen and (min-width: 901px) {
+  /* For desktop: */
+  
+  #row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: inline-flex;
+    justify-content: center;
+    padding: 50px 8vw 8vh;
+    gap: 5vw;
+  }
+  
+  #row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 8vw 0px;
+    gap: 10vw;
+  }
+
+  h2{
+    margin-left: 8vw;
+    padding: 0px;
+  }
+
+  #header{
+    justify-content: unset;
+  }
+
+  changeMonth{
+    display: flex;
+    flex-direction: column;
+  }
+
+  canvas{
+  position: relative;
+  height: 35vh !important; 
+  width: 35vw !important;
+  margin:auto;
+}
+
+  button.monthYearPicker{
+  width: 18vw;
+  height: 5vh;
+}
+  
+  img {
+    width: 400px;
+  }
+
+  .month-year-picker .month-picker > div > div {
+    background-color: #ddd;
+    color: cornflowerblue;
+    height: 40px;
+    margin: 7px;
+    width: 10%;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  .month-year-picker .year-picker {
+    position: relative;
+    width: 55%;
+    margin-bottom: 20px;
+}
+  .month-year-picker .year-picker span {
+    text-align: start;
+}
+  #MonthYearPicker{
+    width: 400px;
+  }
+}
